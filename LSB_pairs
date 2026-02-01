@@ -1,0 +1,23 @@
+HG sweep (reuse instances) | p_bits=30 | mode=LSB | m=[1,10] t=[1,10] | quick=10 validate=10
+Row scan: ALL | quick early-abort: OFF
+
+Known    Unknown  Best(m,t)    Quick%   Quickms     Val%    Valms
+-----------------------------------------------------------------
+LSB15    15       -              0.0%      -         -        -
+LSB16    14       -              0.0%      -         -        -
+LSB17    13       (5,6)        100.0%      18.1   100.0%     30.8
+LSB18    12       (3,6)        100.0%       9.3   100.0%     18.4
+LSB19    11       (3,6)        100.0%       9.5   100.0%     18.9
+LSB20    10       (3,8)        100.0%      13.2   100.0%     22.5
+LSB21    9        (1,2)        100.0%       4.1   100.0%      4.4
+LSB22    8        (1,2)        100.0%       3.9   100.0%      5.5
+LSB23    7        (1,2)        100.0%       5.3   100.0%      4.7
+LSB24    6        (1,2)        100.0%       4.4   100.0%      4.6
+LSB25    5        (1,2)        100.0%       4.3   100.0%      4.5
+LSB26    4        (1,2)        100.0%       4.3   100.0%      5.1
+LSB27    3        (1,2)        100.0%       4.8   100.0%      4.4
+LSB28    2        (1,2)        100.0%       3.9   100.0%      4.3
+LSB29    1        (1,2)        100.0%       4.1   100.0%      4.4
+-----------------------------------------------------------------
+Legend: Known=MSB/LSB + number of known bits; Unknown = remaining bits of p.
+Quick% is on the reused quick instance set; Val% is on a separate reused validation set (if enabled).
